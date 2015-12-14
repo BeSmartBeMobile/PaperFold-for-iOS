@@ -274,6 +274,9 @@
     }
     else if (!isVoiceOverRunning)
     {
+        if (self.state != PaperFoldStateDefault) {
+            return;
+        }
         if (self.paperFoldInitialPanDirection==PaperFoldInitialPanDirectionHorizontal)
         {
             [self onContentViewPannedHorizontally:gesture];
