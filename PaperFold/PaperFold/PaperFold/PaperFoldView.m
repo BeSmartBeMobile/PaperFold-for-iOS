@@ -274,7 +274,7 @@
     }
     else if (!isVoiceOverRunning)
     {
-        if (self.state != PaperFoldStateDefault) {
+        if (self.state == PaperFoldStateTopUnfolded) {
             return;
         }
         if (self.paperFoldInitialPanDirection==PaperFoldInitialPanDirectionHorizontal)
